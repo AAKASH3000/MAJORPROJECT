@@ -120,6 +120,12 @@ app.get("/", (req, res) => {
 });
 
 
+//route
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
+
 //use routes
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
