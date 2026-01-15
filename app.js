@@ -114,6 +114,11 @@ app.use((req,res,next)=>{
 //     res.send(registerUser);
 // });
 
+//route
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 
 //use routes
 app.use("/listings",listingRouter);
