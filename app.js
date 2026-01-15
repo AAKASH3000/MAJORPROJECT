@@ -114,13 +114,8 @@ app.use((req,res,next)=>{
 //     res.send(registerUser);
 // });
 
-//route
-app.get("/", (req, res) => {
-    res.redirect("/listings");
-});
 
-
-//route
+//root route
 app.get("/", (req, res) => {
     res.redirect("/listings");
 });
